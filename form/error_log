@@ -1,0 +1,1 @@
+[15-Mar-2013 14:08:41] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home/clients/public_html/p8p/form/conn.php on line 9

@@ -1,0 +1,2 @@
+[21-Jan-2013 09:13:08] PHP Fatal error:  Call to undefined method SettingsModel::insertToken() in /home/clients/public_html/p8p/ChimpChamp/application/controllers/common/settings.php on line 138
+[31-Jan-2013 10:15:15] PHP Fatal error:  Call to undefined method SettingsModel::GetMailchimpList() in /home/clients/public_html/p8p/ChimpChamp/application/controllers/common/settings.php on line 17

@@ -1,0 +1,30 @@
+<html>
+<body>
+	<h1>How to use the Shopify Coupons App</h1>
+	<h2>Login Details</h2>
+	<p>For test over the weekend the login details are:
+		<ul>
+			<li><a href="../index.php" target="_blank">Login Here</a></li>
+			<li>User: admin</li>
+			<li>Pass: admin</li>
+		</ul>
+	</p>
+	<h2>Settings</h2>
+	<p>On this screen you'll make the various settings to connect the app with Shopify and MailChimp so that it can do what it does.
+		<ol>
+			<li><a href="http://kb.mailchimp.com/article/what-are-webhooks-and-how-can-i-set-them-up/" target="_blank">Add the Webhook to your MailChimp List</li>
+			<li><a href="http://kb.mailchimp.com/article/where-can-i-find-my-api-key" target="_blank">Add your MailChimp API Key to the app</a></li>
+			<li><a href="http://docs.shopify.com/support/configuration/apps/where-do-i-find-my-api-key" target="_blank">Connect your Shopify Account</a></li>
+		</ol>
+	</p>
+	<h2>Add Coupons</h2>
+	<p>On this screen you'll upload a CSV of the coupon codes you generate and export from the <a href="http://apps.shopify.com/bulk-discounts" target="_blank">Bulk Discounts</a> app.</p>
+	<p>Be sure to save these codes in a text file with the .csv extension: coupons.csv (for example)</p>
+	<p>Then just click the upload button and select the file you saved.</p>
+	<h2>Update Coupons</h2>
+	<p>On this screen you'll update coupons that have already been used. This will add a flag to the Subscriber record in MailChimp associated with this coupon so that you can to segment against that for follow ups and campaigns.</p>
+	<p>Just selected date range and click "Update Coupons" and the system will look inside your Shopify account for any coupons used within that date range and then update the correct subscriber record and MailChimp to add the flag that says they used the coupon.</p>
+	<p>Note: I will add a feature to delete unassigned coupons in the near future.</p>
+</body>
+</html>
+			

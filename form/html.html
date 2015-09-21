@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Subscribe to our newsletter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ChimpChamp.com">
+</head>
+
+<body>
+
+    <div class="container"> 
+        <p id="pmsg" style="color:red;font-size:10px"></p>
+
+
+        <script type="text/javascript">
+
+        function getQueryParams(qs) {
+            qs = qs.split("+").join(" ");
+            var params = {},
+            tokens,
+            re = /[?&]?([^=]+)=([^&]*)/g;
+
+            while (tokens = re.exec(qs)) {
+                params[decodeURIComponent(tokens[1])]
+                = decodeURIComponent(tokens[2]);
+            }
+
+            return params;
+        }
+
+        var GET = getQueryParams(document.location.search);
+        if(GET.msg == 'email_error')
+        {
+            document.getElementById("pmsg").innerHTML="The email entered is invalid";
+        }
+        else if(GET.msg == 'coupon_error')
+        {
+            document.getElementById("pmsg").innerHTML="No new coupon found";
+        }
+        else if(GET.msg == 'mc_error')
+        {
+            document.getElementById("pmsg").innerHTML="MailChimp Error";
+        }
+        else if(GET.msg == 'success')
+        {
+            document.getElementById("pmsg").innerHTML="You have been subscribed successfully!";
+        }
+        else if(GET.msg == 'update')
+        {
+            document.getElementById("pmsg").innerHTML="You're already subscribed to this list.";
+        }
+        
+
+        
+        </script>
+
+
+        <!-- Main hero unit for a primary marketing message or call to action -->
+        <div id="login_form">
+           <form action="http://clients.chimpchamp.com/p8p/form/mailchimp_action.php" method="post" class="">
+             First Name: <input type="text" value="" name="fname"><br>
+             Last Name: <input type="text" value="" name="lname"><br>
+             Email: <input type="text" value="" name="email"><br>
+             <input type="submit" value="Submit" class="btn">
+         </form>
+     </div>
+ </div>
+ <!-- /container --> 
+
+</body>
+</html>
